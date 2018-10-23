@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--The width=device-width part sets the width of the page to follow the screen-width of the device -->
+    <!--(which will vary depending on the device).-->
+    <!--The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/stylew.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: black; padding-top: 20px">
+    <div class="container" style="padding-left: 0; padding-right: 0">
+
+
+        <div class="navbar-header">
+            <a class="navbar-brand" id="navbar-brand" style="padding-left: 0; font-size: 24px; color: white" href="index.html">
+               T-REFER, SINCE 2017
+            </a>
+        </div>
+
+
+        <div id="navbar" class="collapse navbar-collapse" style="float: right; font-size: 24px;">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html" style="color: white">Home</a></li>
+                <li><a href="login.html" style="color: white">Log in</a></li>
+                <li><a href="../BackEnd/signup.php" style="color: white">Sign up</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</nav>
+
+
+
+<div class="container">
+
+    <div class="row" style="padding-top: 50px">
+
+        <div class="center-form panel rounded">
+            <div class="panel-body">
+                <form name="login-form" action="../BackEnd/loginpost.php" id="loginForm" method="post">
+
+                    <div class="form-group">
+                        <input class="form-control input-lg"
+                               type="email" name="email"
+                               value="" placeholder="Email"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                               title="Please enter a valid email address" required />
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control input-lg"
+                               type="password" name="password"
+                               placeholder="Password" required />
+                    </div>
+
+                    <p id="loginError" class="error-text"></p>
+
+
+                    <button type="submit" class="btn btn-block button-default">
+                        Log in
+                    </button>
+
+                    <br/>
+
+                    <p class="text-center">
+                        <small>
+                            Don't have an account yet?
+                            <a href="../BackEnd/signup.php">Sign up</a>
+                        </small>
+                    </p>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $('#loginForm input').click(function() {
+        $('#loginError').text('');
+    });
+</script>
+
+
+</html>

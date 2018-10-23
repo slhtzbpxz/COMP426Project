@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T-REFER, SINCE 2017 - Home</title>
+
+    <!--CSS-->
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</head>
+
+
+<body class="contain-all" style="min-height: 100%;position: relative;height: auto;padding-bottom: 64px;">
+<div id="wrapper2" style="width: 1600px">
+<div class="navbar">
+
+    <ul class="navbar-ul" style="padding-left: 0px;">
+
+        <li class="navbar-left" style="float: left">
+            <a href=" " >T-REFER, SINCE 2017</a >
+        </li>
+
+        <li class="nav-item dropdown" style="float: right">
+            <a href="javascript:void(0)" class="dropbtn">Sign up</a >
+            <div class="dropdown-content">
+                <a href="../BackEnd/signup.php">Referee</a >
+                <a href="../BackEnd/signup.php">Referer</a >
+            </div>
+        </li>
+        <li class="nav-item" style="float: right"><a href="../FrontEnd/login.html">Log in</a ></li>
+        <li class="nav-item" style="float: right"><a href="../FrontEnd/index.html">Home</a ></li>
+
+    </ul>
+
+</div>
+<div class="head-container">
+    <div class="wrapper">
+        <div class="banner-wrapper" style="margin-left: 0px">
+            <div class="banner-container">
+                <div class="banner-head" style="height:750px;padding:0;background-image: url(../images/bk.png);background-size: cover;">
+                    <h2 class="wsite-title" style="padding-top: 125px;padding-left: 85px">
+                        TARHEEL
+                        <br>
+                        REFER
+                        <br>
+                    </h2>
+                    <div class="introduction" style="padding-left: 85px">
+                        Make Connection Stronger
+                        <br>
+                    </div>
+                    <div>
+                        <div style="height:20px;overflow:hidden;width:100%;"></div>
+                        <div style="height:20px;overflow:hidden;width:100%;"></div>
+                    </div>
+                    <!--<div class="refer-button">-->
+                        <table class="button-table" style="margin-left:  100px;">
+                            <tbody class="refer-button-table-body">
+                            <tr class="refer-button-table-tr">
+                                <td class="refer-button" >
+                                    <div style="text-align: inherit;">
+                                        <div style="height:10px;overflow: hidden"></div>
+                                        <a class="get-make-refer" href="../BackEnd/signup.php" style="align-items: center">
+                                            <div style="height: 10px"></div>
+                                                <span class="get-refer-button">
+                                                    I WANT TO GET REFER
+                                                </span>
+                                        </a>
+                                        <div style="height:10px;overflow: hidden"></div>
+                                    </div>
+
+                                </td>
+
+                                <td class="refer-button">
+                                    <div style="text-align: inherit;">
+                                        <div style="height:10px;overflow: hidden"></div>
+                                        <a class="get-make-refer" href="../BackEnd/signup.php">
+                                            <div style="height: 10px"></div>
+                                            <span class="make-refer-button">
+                                                I WANT TO MAKE REFER
+                                            </span>
+                                        </a>
+                                        <div style="height:10px;overflow: hidden"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                    <!--</div>-->
+                    <div>
+                        <div style="height:20px;overflow:hidden;width:100%;"></div>
+                        <div style="height:20px;overflow:hidden;width:100%;"></div>
+                    </div>
+                    <div class="advertisement-in-center" style="text-align: center;">
+                        <font size="4">
+                            Since December 11, 2017 Chapel Hill, NC
+                            <br>
+                        </font>
+                    </div>
+                    <div clas="unc-logo">
+                        <div class="with-image" style="padding-top: 10px;margin-left: 0;margin-right: 10px;text-align: inherit;">
+
+                                <img src="../images/unclogo.png" style="height:25%; width: 25%;opacity: 5;">
+
+                        </div>
+                    </div>
+                    <div class="arrow-container">
+                        <a href="#body-container">
+                            <div class="arrow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: darkgray;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row > .column {
+        padding: 0 8px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .column {
+        float: left;
+        width: 8.3%;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+    }
+
+    /* Content For Companies Preview*/
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    /* The Close Button */
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .mySlides {
+        display: none;
+        position: relative;
+    }
+
+    .cursor {
+        cursor: pointer
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    img {
+        margin-bottom: -4px;
+    }
+
+    .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .demo {
+        opacity: 0.6;
+    }
+
+   .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    img.hover-shadow {
+        transition: 0.3s
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+    .picture-content{
+        position: relative;
+        /*max-width: 800px; !* Maximum width *!*/
+        margin: 0 auto; /* Center it */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    }
+    .picture-content .compintro-content{
+        margin-top: 200px;
+        position: absolute; /* Position the background text */
+        top: 0; /* Use top:0 to append it to the top */
+        background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 100%; /* Full width */
+        /*height:100%*/
+        padding: 20px; /* Some padding */
+    }
+
+    .picture-content .refer-content{
+        position: absolute; /* Position the background text */
+        bottom: 0; /* Use top:0 to append it to the top */
+        /*background: rgba(0, 0, 0, 0.9); !* Black background with 0.5 opacity *!*/
+        color: #f1f1f1; /* Grey text */
+        width: 100%; /* Full width */
+        padding: 20px; /* Some padding */
+        text-decoration: none;}
+
+    .arrow2{
+        box-sizing: border-box;
+        height: 3vw;
+        width: 3vw;
+        border-style: solid;
+        border-color: black;
+        border-width: 0px 1px 1px 0px;
+        transform: rotate(45deg);
+        transition: border-width 150ms ease-in-out;
+    }
+
+    .arrow2:hover {
+        border-bottom-width: 4px;
+        border-right-width: 4px;
+    }
+
+</style>
+
+<div id="body-container" >
+<!--<div class="body-container" style="height:750px;background-image: url(../images/bodybk.jpg);background-size: cover;" >-->
+    <div style="height:50px"></div>
+        <table class="body-table" style="padding-left: 85px;width: 100%;">
+            <tbody>
+                <tr>
+                    <td class="body-header" style="width:50%;background-color: rgba(0.2, 0, 0, 0)">
+                        <h3 class="body-header-font">
+                            What is Tar Heel Refer?
+                        </h3>
+                        <div style="height:10px"></div>
+                        <h2 style="color:black;opacity:0.9;font-weight: 700;font-size: 60px;line-height:60px; margin-top: 0;">
+                            <strong>
+                                Make
+                                <br>
+                                Connection
+                                <br>
+                                Stronger
+                            </strong>
+                        </h2>
+                        <div class="body-header-font" style="line-height: 40px;">
+                            This website is aimed at linking Tar Heels around the world on mouse clicks. This is a website where Tar Heel alumni who have information about inner refer opportunities can share recruiting information and any Tar Heel who is interested can apply for that opportunity.
+                            <br>
+                            All these connections can be simply done by one click. Sign up and get referred or make refers today to explore a broader Tar Heel connections!
+                        </div>
+                    </td>
+                    <td class="body-picture">
+                        <div style="padding-top: 30px;" >
+                            <a>
+                                <img src="../images/oldwell.jpg" style="width: 600px;">
+                            </a>
+                        </div>
+                        <a href="#section2">
+                            <button class="button" style="vertical-align:middle">
+                                <span>Discover More </span>
+                            </button>
+                        </a>
+
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+</div>
+<div class="about-container"  id="section2"  style="height: 750px;background-color: white;">
+    <div class="company-container">
+        <div class="container-elements">
+            <div style="height: 180px;"></div>
+            <div class="middle-components">
+                <table class="body-table" style="padding-left: 20px;padding-right:30px;width: 100%;height:400px">
+                    <tr>
+                        <td style="background-color: #333333">
+                            <div style="height:30px;"></div>
+
+                            <h2 style="color:White;opacity:0.9;font-weight: 700;font-size: 58px;line-height:70px; margin-top: 0;margin-left: 50px;">
+                                <strong>Companies</strong>
+                                <br>
+                                <Strong>On The List</Strong>
+                            </h2>
+                        </td>
+                        <td style="display: flex; flex: 33.3%;">
+                            <div style="display: flex; flex: 33.3%;">
+                                    <img src="../images/Airbnb.png" style="display: table;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                            </div >
+                            <div style="display: flex; flex: 33.3%;" >
+                                <img src="../images/Amazon.png" style="display: table;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                            </div>
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/Apple.png" style="display: table;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                            </div>
+                        </td>
+                        <td style="display: flex; flex: 33.3%;">
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/Cisco.png" style="display: table;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                            </div >
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/IBM.png" style="display: table;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                            </div>
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/Google.png" style="display: table;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                            </div>
+                        </td>
+                        <td style="display: flex; flex: 33.3%;">
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/MathWorks.png" style="display: table;" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                            </div>
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/Microsoft.png" style="display: table;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                            </div>
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/Uber.png" style="display: table;" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                            </div>
+                        </td>
+                        <td style="display: flex; flex: 33.3%;">
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/Unity.png" style="display: table;" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                            </div>
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/VMware.png" style="display: table;" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+                            </div>
+                            <div style="display: flex; flex: 33.3%;">
+                                <img src="../images/Yelp.png" style="display: table;" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/AirbnbBK.gif" style="width:100%; height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">About Airbnb</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;"> Founded in August of 2008 and based in San Francisco, California, Airbnb is a trusted community marketplace for people to list, discover, and book unique accommodations around the world — online or from a mobile phone or tablet. </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://www.airbnb.com/careers/university">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/AmazonBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">About Amazon</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;"> Amazon is a Fortune 500 e-commerce company based in Seattle, Wash. It has the distinction of being one of the first large companies to sell goods over the Internet. In 1994, Jeff Bezos founded Amazon, which launched the following year.</p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://www.amazon.jobs/en-gb/business_categories/university-recruiting">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/AppleBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">About Apple, Inc.</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    Apple Inc. is an American multinational technology company headquartered in Cupertino, California that designs, develops, and sells consumer electronics, computer software, and online services.
+                                </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://www.apple.com/jobs/us/corporate.html?&cid=us_paid_search_ag_google_US_B_Jobs_Exact_139685460">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/CiscoBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">Cisco System, Inc.</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    Cisco Systems, Inc. is an American multinational technology conglomerate headquartered in San Jose, California, in the center of Silicon Valley, that develops, manufactures and sells networking hardware, telecommunications equipment and other high-technology services and products.                                </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://jobs.cisco.com/">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/IBMBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">IBM, Inc.</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    IBM manufactures and markets computer hardware, middleware and software, and offers hosting and consulting services in areas ranging from mainframe computers to nanotechnology. IBM is also a major research organization, holding the record for most patents generated by a business (as of 2017) for 24 consecutive years.     </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="http://www-03.ibm.com/employment/us/">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/GoogleBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">Google, LLC.</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    Google LLC is an American multinational technology company that specializes in Internet-related services and products. These include online advertising technologies, search, cloud computing, software, and hardware. Google was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University, in California.
+                                </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://careers.google.com/students/">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/MathWorksBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">MathWorks, Inc.</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    The MathWorks, Inc. (branded as simply MathWorks) is an American privately held corporation that specializes in mathematical computing software. Its major products include MATLAB and Simulink, which support data analysis and simulation. As of June 2016, it employed over 3,600 people worldwide with 70% located at the company's headquarters in Natick, Massachusetts, United States.
+                                </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://www.mathworks.com/company/jobs/opportunities/">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/MicrosoftBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">Microsoft Corporation</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    Microsoft Corporation develops, manufactures, licenses, supports and sells computer software, consumer electronics, personal computers, and services. Its best known software products are the Microsoft Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web browsers.
+                                </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://careers.microsoft.com/students/apply">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/UberBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">Uber Technologies Inc.</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    Uber Technologies Inc. is a global transportation technology company headquartered in San Francisco, California, United States, operating in 633 cities worldwide. It develops, markets and operates the Uber car transportation and food delivery mobile apps. Uber drivers use their own cars although drivers can rent a car to drive with Uber.
+                                </p>
+                            </div>
+
+                            <div class="refer-content">
+                                <a href="https://www.uber.com/careers/list/?team=university">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext" style="font-size: 20px;color: white;">10 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/UnityBK.png" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">Unity Technologies SF</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    Unity Technologies SF is an American video game development company, which is best known for the development of Unity, a licensed game engine. It was founded in Denmark in 2004 as Over the Edge I/S, and became Unity Technologies ApS in 2006. It moved its headquarters to San Francisco and became "Unity Technologies SF" in 2009.
+                                </p>
+                            </div>
+
+                            <div class="refer-content">
+                                <a href="https://careers.unity.com/">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mySlides">
+                        <div class="numbertext">11 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/VmwareBK.jpg" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">VMware Inc.</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    VMware, Inc. is a subsidiary of Dell Technologies that provides cloud computing and platform virtualization software and services. It was the first commercially successful company to virtualize the x86 architecture. VMware's desktop software runs on Microsoft Windows, Linux, and macOS.
+                                </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://careers.vmware.com/university">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mySlides">
+                        <div class="numbertext">12 / 12</div>
+                        <div class="picture-content">
+                            <img src="../images/YelpBK.png" style="width:100%; opacity:0.9;height:650px;">
+                            <div class="compintro-content">
+                                <h1 style="margin-left: 50px;margin-top: 50px;">Yelp, Inc.</h1>
+                                <p style="font-size: 24px;margin-left: 50px;line-height:30px;">
+                                    Yelp is an American multinational corporation headquartered in San Francisco, California. It develops, hosts and markets Yelp.com and the Yelp mobile app, which publish crowd-sourced reviews about local businesses, as well as the online reservation service Yelp Reservations. The company also trains small businesses in how to respond to reviews, hosts social events for reviewers, and provides data about businesses, including health inspection scores.
+                                </p>
+                            </div>
+                            <div class="refer-content">
+                                <a href="https://www.yelp.com/careers/home">
+                                    <button class="button" style="vertical-align:middle; margin-left: 450px;">
+                                        <span>Apply</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Airbnb.png" style="width:100%" onclick="currentSlide(1)" alt="Airbnb">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Amazon.png" style="width:100%" onclick="currentSlide(2)" alt="Amazon.com Inc.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Apple.png" style="width:100%" onclick="currentSlide(3)" alt="Apple, Inc.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Cisco.png" style="width:100%" onclick="currentSlide(4)" alt="Cisco Systems, Inc.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/IBM.png" style="width:100%" onclick="currentSlide(5)" alt="IBM, Inc.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Google.png" style="width:100%" onclick="currentSlide(6)" alt="Google LLC">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/MathWorks.png" style="width:100%" onclick="currentSlide(7)" alt="MathWorks, Inc">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Microsoft.png" style="width:100%" onclick="currentSlide(8)" alt="Microsoft Corporation">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Uber.png" style="width:100%" onclick="currentSlide(9)" alt="Uber Technologies Inc.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Unity.png" style="width:100%" onclick="currentSlide(10)" alt="Unity Technologies SF">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/VMware.png" style="width:100%" onclick="currentSlide(11)" alt="VMware Inc.">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/Yelp.png" style="width:100%" onclick="currentSlide(12)" alt="Yelp, Inc.">
+                    </div>
+                </div>
+
+
+                <script>
+                    function openModal() {
+                        document.getElementById('myModal').style.display = "block";
+                    }
+
+                    function closeModal() {
+                        document.getElementById('myModal').style.display = "none";
+                    }
+
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        var captionText = document.getElementById("caption");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                        captionText.innerHTML = dots[slideIndex-1].alt;
+                    }
+                </script>
+
+            </div>
+
+            <div style="height: 50px;"></div>
+
+            <div class="arrow-container" style="rgba(0,0,0,0.1);height: 30px;">
+                <a href="#service">
+                    <div class="arrow2"></div>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<style>
+
+    /* The grid: Three equal columns that floats next to each other */
+    .ex-column {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .containerTab {
+        padding: 20px;
+        color: white;
+    }
+
+    /* Clear floats after the columns */
+    .ex-row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Closable button inside the container tab */
+    .closebtn {
+        float: right;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function openTab(tabName) {
+        var i, x;
+        x = document.getElementsByClassName("containerTab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+</script>
+
+<div id="service">
+    <div style="height: 175px;"></div>
+    <div style="text-align:center">
+        <h2>How T-Refer Works</h2>
+        <p>Click on the boxes and EXPLORE!</p>
+    </div>
+
+    <!-- Three columns -->
+    <div class="ex-row">
+        <div class="ex-column" onclick="openTab('b1');" style="background:lightgray;">
+            REFERER
+        </div>
+        <div class="ex-column" onclick="openTab('b2');" style="background:darkgray;">
+            REFEREE
+        </div>
+        <div class="ex-column" onclick="openTab('b3');" style="background:black;">
+            STAY CONNECTED!
+        </div>
+    </div>
+
+    <!-- Full-width columns: (hidden by default) -->
+    <div id="b1" class="containerTab" style="display:none;background:lightgray;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>REFERER</h2>
+        <p style="font-size: 22px;line-height: 28px;">If you have any opportunity in the company that you are currently working for or if there is a specific talent you are looking for to fill in some position in your company, please do not hesitate to post it through your account! Tar Heel job hunters will see and apply for it!</p>
+    </div>
+
+    <div id="b2" class="containerTab" style="display:none;background:darkgray;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>REFEREE</h2>
+        <p style="font-size: 22px;line-height: 28px;">Whether you are a newly graduate form UNC or you have several years' working experience, you are all welcomed to be referred! Just log in your account and check out if there is any specific company or position you are looking for. A simple click will make you seen by that referee!</p>
+    </div>
+
+    <div id="b3" class="containerTab" style="display:none;background:black;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>CONNECTED!</h2>
+        <p style="font-size: 22px;line-height: 28px;">So for, we have successfully connected over 50 Tar Heels with UNC Alumni from all walks of life, covering technology, finance and health care industries. They do not only get idea jobs, but also stay connected with these Alumni. </p>
+    </div>
+</div>
+<div class="arrow-container" style="rgba(0,0,0,0.1);height: 30px;">
+    <a href="#about-us">
+        <div class="arrow2"></div>
+    </a>
+</div>
+<div style="height: 250px;"></div>
+
+
+<style>
+
+    /**, *:before, *:after {*/
+        /*box-sizing: inherit;*/
+    /*}*/
+
+    .us-column {
+        float: left;
+        width: 25%;
+        /*height: 600px;*/
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    @media (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .us-container {
+        padding: 0 16px;
+    }
+
+    .us-container::after, .us-row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: grey;
+    }
+
+    .contact-button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .contact-button:hover {
+        background-color: #555;
+    }
+</style>
+
+<div id="about-us">
+    <div style="height: 60px;"></div>
+
+    <h1 style="margin-left: 50px;">INSTRUCTOR  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;OUR TEAM</h1>
+    <!--<p>Resize the browser window to see the effect.</p>-->
+    <!--<br>-->
+
+    <div class="us-row">
+        <div class="us-column">
+            <div class="card">
+                <img src="../images/kmp.jpeg" alt="KMP" style="width:100%;">
+                <div class="us-container">
+                    <h2>Ketan Mayer-Patel</h2>
+                    <p class="title">Project Instructor; Associate Professor at UNC Chapel Hill</p>
+                    <p>(80) Ph.D. 1999, California-Berkeley. Multimedia systems; networking; multicast applications.</p>
+                    <p>kmp@cs.unc.edu</p>
+                    <a href="mailto:kmp@cs.unc.edu"><button class="contact-button">Contact</button></a>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="us-column">
+                <div class="card">
+                    <img src="../images/YutingBu.jpg" alt="Yuting BU" style="width:100%">
+                     <div class="us-container">
+                        <h2>Yuting Bu</h2>
+                        <p class="title">Junior at University of North Carolina at Chapel Hill</p>
+                        <p>Primary major in Statistics Analytics</p>
+                         <p>Second major in Computer Science</p>
+                        <p>yuting@live.unc.edu</p>
+                        <a href="mailto:yuting@live.unc.edu"><button class="contact-button">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="us-column">
+                <div class="card">
+                    <img src="../images/YingnanWu.jpeg" alt="Yingnan Wu" style="width:100%">
+                    <div class="us-container">
+                        <h2>Yingnan Wu</h2>
+                        <p class="title">Junior at University of North Carolina at Chapel Hill</p>
+                        <p>Primary major in Statistics Analytics</p>
+                        <p>Second major in Computer Science</p>
+                        <p>wuyn@live.unc.edu</p>
+                        <a href="mailto:wuyn@live.unc.edu"><button class="contact-button">Contact</button></a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="us-column">
+            <div class="card">
+                <img src="../images/YingZheng.jpeg" alt="Ying Zheng" style="width:100%">
+                <div class="us-container">
+                    <h2>Ying Zheng</h2>
+                    <p class="title">Junior at University of North Carolina at Chapel Hill</p>
+                    <p>Primary major in Statistics Analytics</p>
+                    <p>Second major in Computer Science</p>
+                    <p>rachelzy@live.unc.edu</p>
+                    <a href="mailto:rachelzy@live.unc.edu"><button class="contact-button">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-container"></div>
+</div>
+</body>
+
+
+</html>
